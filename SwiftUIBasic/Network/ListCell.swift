@@ -13,7 +13,18 @@ struct ListCell: View {
     
     let item: ListItem
     
+    /// Function declares an opaque return type, but the return statements in its body do not have matching underlying types
+    /// 尴尬的是在boyd这个属性中,无法使用guard let 这样的函数去守护item中的可选类型
     var body: some View {
+        /*
+        guard let urlString = item.topicImageUrl, let url = URL(string: urlString) else {
+            return HStack {
+                Text("Error")
+            }
+        }
+        */
+        //let urlString = item.topicImageUrl
+        //let url = URL(string: urlString!)
         HStack {
             KFImage(URL(string: item.topicImageUrl!)!)
                 .placeholder {

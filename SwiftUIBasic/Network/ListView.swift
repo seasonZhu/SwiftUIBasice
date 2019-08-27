@@ -58,6 +58,7 @@ struct ListView: View {
         }
     }
     
+    /// 网络请求
     func netWorkRequest() {
         ViewModel.getListModelInfo { (list, error) in
             self.isNetWorkSuccess = list != nil
@@ -65,6 +66,7 @@ struct ListView: View {
         }
     }
     
+    /// 添加一行
     func addListItem() {
         guard let _ = list else {
             return
@@ -74,6 +76,8 @@ struct ListView: View {
         list = list! + [item]
     }
     
+    /// 删除一行
+    /// - Parameter offset: IndexSet
     func deleteARow(_ offset: IndexSet?) {
         guard let offset = offset else {
             return
@@ -85,6 +89,9 @@ struct ListView: View {
         list!.remove(atOffsets: offset)
     }
     
+    /// 移动一行
+    /// - Parameter source: 源
+    /// - Parameter destination: 目标
     func move(from source: IndexSet, to destination: Int) {
         guard let _ = list else {
             return
