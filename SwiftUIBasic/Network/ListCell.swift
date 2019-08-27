@@ -7,23 +7,29 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
 struct ListCell: View {
     
     let item: ListItem
     
     var body: some View {
-//        HStack {
-//            Image(item.topicImageUrl ?? "")
-//                .frame(width: 30, height: 30, alignment: .center)
-//        }
-        
-        NavigationLink(destination: ToastOrderView()) {
-            VStack(alignment: .leading, spacing: 10) {
-                Text("title: \(item.topicTittle ?? "None")")
-                    .lineLimit(2)
-                Text("Detail: \(item.topicDesc ?? "None")")
-                    .lineLimit(2)
+        HStack {
+            KFImage(URL(string: item.topicImageUrl!)!)
+                .placeholder {
+                    Image("turtlerock")
+                }
+                .resizable()
+                .frame(width: 44, height: 44, alignment: .center)
+                .cornerRadius(8)
+            
+            NavigationLink(destination: ListDetaiView(item: item)) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("\(item.topicTittle ?? "None")")
+                        .lineLimit(2)
+//                    Text("Detail: \(item.topicDesc ?? "None")")
+//                        .lineLimit(2)
+                }
             }
         }
     }
