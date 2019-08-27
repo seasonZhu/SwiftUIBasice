@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": "master",
+          "revision": "052c2c23579d9c5550afb9617bdc2487e05215ae",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftUIX",
+        "repositoryURL": "https://github.com/SwiftUIX/SwiftUIX",
+        "state": {
+          "branch": "master",
+          "revision": "69958ad8c44876bcc763752e2e7971b354aadd42",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

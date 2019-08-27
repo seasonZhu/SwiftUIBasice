@@ -1,0 +1,73 @@
+//
+//  ContentView.swift
+//  SwiftUIBasic
+//
+//  Created by season on 2019/8/23.
+//  Copyright © 2019 season. All rights reserved.
+//
+
+import SwiftUI
+import MapKit
+
+/// 一个纯静态页面
+struct ContentView: View {
+        
+    var body: some View {
+        
+        NavigationView {
+
+            VStack {
+                MapView()
+                    .edgesIgnoringSafeArea(.top)
+                    .frame(height: 300)
+
+                CircleImage()
+                    .offset(x: 0, y: -130)
+                    .padding(.bottom, -130)
+                    .onTapGesture(perform: imageTapAction)
+
+                VStack(alignment: .leading) {
+                    Text("Turtle Rock")
+                        .font(.title)
+                    HStack(alignment: .top) {
+                        Text("Joshua Tree National Park")
+                            .font(.subheadline)
+                        Spacer()
+                        Text("California")
+                            .font(.subheadline)
+                    }
+                    
+                    NavigationLink(destination: ToastOrderView()) {
+                        Text("Next Controller")
+                    }
+                    
+                    NavigationLink(destination: ListView()) {
+                        Text("To ListView")
+                    }
+                }
+                .padding()
+
+                Spacer()
+                
+            }
+            .navigationBarTitle("景点", displayMode: .inline)
+            .navigationBarItems(trailing: NavigationLink(destination: ToastOrderView(), label: {
+                Text("to")
+            }))
+        }.onAppear {
+            print("视图即将展现")
+        }.onDisappear {
+            NSLog("视图即将消失")
+        }
+    }
+    
+    func imageTapAction() {
+        print("图片的点击事件")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
