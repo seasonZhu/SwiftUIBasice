@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "CRuntime",
+        "repositoryURL": "https://github.com/wickwirew/CRuntime.git",
+        "state": {
+          "branch": null,
+          "revision": "95f911318d8c885f6fc05e971471f94adfd39405",
+          "version": "2.1.2"
+        }
+      },
+      {
         "package": "Kingfisher",
         "repositoryURL": "https://github.com/onevcat/Kingfisher",
         "state": {
@@ -20,11 +29,56 @@
         }
       },
       {
+        "package": "QGrid",
+        "repositoryURL": "https://github.com/Q-Mobile/QGrid",
+        "state": {
+          "branch": "master",
+          "revision": "8547bbfedaeb466f392e2c42e0f2c72c76ee4523",
+          "version": null
+        }
+      },
+      {
+        "package": "Runtime",
+        "repositoryURL": "https://github.com/wickwirew/Runtime.git",
+        "state": {
+          "branch": null,
+          "revision": "c167476b07fe8cc65fdf064076a4081c3269d14a",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "package": "SemanticUI",
+        "repositoryURL": "https://github.com/SwiftWebResources/SemanticUI-Swift.git",
+        "state": {
+          "branch": null,
+          "revision": "eaa40d8f7c01e1aad896fb8747edd3a1b71dc41a",
+          "version": "2.3.4"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "32760eae40e6b7cb81d4d543bb0a9f548356d9a2",
+          "version": "2.7.1"
+        }
+      },
+      {
         "package": "SwiftUIX",
         "repositoryURL": "https://github.com/SwiftUIX/SwiftUIX",
         "state": {
           "branch": "master",
           "revision": "69958ad8c44876bcc763752e2e7971b354aadd42",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftWebUI",
+        "repositoryURL": "https://github.com/SwiftWebUI/SwiftWebUI",
+        "state": {
+          "branch": "master",
+          "revision": "db6d0a4f597fa18b7410e6092b5acc6d24e33004",
           "version": null
         }
       }

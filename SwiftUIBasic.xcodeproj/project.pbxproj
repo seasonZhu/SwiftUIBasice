@@ -17,6 +17,8 @@
 		616AEBDF2314D52D004C19EB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBDE2314D52D004C19EB /* Kingfisher */; };
 		616AEBE12314D52D004C19EB /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBE02314D52D004C19EB /* KingfisherSwiftUI */; };
 		616AEBE32314D9E6004C19EB /* ListDetaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBE22314D9E6004C19EB /* ListDetaiView.swift */; };
+		61F7DF0F23179DFF003E5723 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF0E23179DFF003E5723 /* QGrid */; };
+		61F7DF1223179FB2003E5723 /* SwiftWebUI in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF1123179FB2003E5723 /* SwiftWebUI */; };
 		61FAA7F5230FE5F000E07760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FAA7F4230FE5F000E07760 /* AppDelegate.swift */; };
 		61FAA7F7230FE5F000E07760 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FAA7F6230FE5F000E07760 /* SceneDelegate.swift */; };
 		61FAA7F9230FE5F000E07760 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FAA7F8230FE5F000E07760 /* ContentView.swift */; };
@@ -51,8 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F7DF0F23179DFF003E5723 /* QGrid in Frameworks */,
 				616AEBDF2314D52D004C19EB /* Kingfisher in Frameworks */,
 				616AEBC52313ABE2004C19EB /* Alamofire in Frameworks */,
+				61F7DF1223179FB2003E5723 /* SwiftWebUI in Frameworks */,
 				616AEBE12314D52D004C19EB /* KingfisherSwiftUI in Frameworks */,
 				616AEBD12313CD31004C19EB /* SwiftUIX in Frameworks */,
 			);
@@ -136,6 +140,8 @@
 				616AEBD02313CD31004C19EB /* SwiftUIX */,
 				616AEBDE2314D52D004C19EB /* Kingfisher */,
 				616AEBE02314D52D004C19EB /* KingfisherSwiftUI */,
+				61F7DF0E23179DFF003E5723 /* QGrid */,
+				61F7DF1123179FB2003E5723 /* SwiftWebUI */,
 			);
 			productName = SwiftUIBasic;
 			productReference = 61FAA7F1230FE5F000E07760 /* SwiftUIBasic.app */;
@@ -169,6 +175,8 @@
 				616AEBC32313ABE2004C19EB /* XCRemoteSwiftPackageReference "Alamofire" */,
 				616AEBCF2313CD31004C19EB /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				616AEBDD2314D52D004C19EB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				61F7DF0D23179DFE003E5723 /* XCRemoteSwiftPackageReference "QGrid" */,
+				61F7DF1023179FB2003E5723 /* XCRemoteSwiftPackageReference "SwiftWebUI" */,
 			);
 			productRefGroup = 61FAA7F2230FE5F000E07760 /* Products */;
 			projectDirPath = "";
@@ -427,6 +435,22 @@
 				revision = 58d878f85ad223a469ce1474e1c73e29a4012577;
 			};
 		};
+		61F7DF0D23179DFE003E5723 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		61F7DF1023179FB2003E5723 /* XCRemoteSwiftPackageReference "SwiftWebUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftWebUI/SwiftWebUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -449,6 +473,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 616AEBDD2314D52D004C19EB /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
+		};
+		61F7DF0E23179DFF003E5723 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61F7DF0D23179DFE003E5723 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+		61F7DF1123179FB2003E5723 /* SwiftWebUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61F7DF1023179FB2003E5723 /* XCRemoteSwiftPackageReference "SwiftWebUI" */;
+			productName = SwiftWebUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
