@@ -65,6 +65,15 @@
         }
       },
       {
+        "package": "SwiftUIFlux",
+        "repositoryURL": "https://github.com/Dimillian/SwiftUIFlux.git",
+        "state": {
+          "branch": null,
+          "revision": "aa97f7f053941ecf288824a92294bf39ab118dd1",
+          "version": "0.4.5"
+        }
+      },
+      {
         "package": "SwiftUIX",
         "repositoryURL": "https://github.com/SwiftUIX/SwiftUIX",
         "state": {

@@ -19,6 +19,7 @@
 		616AEBE32314D9E6004C19EB /* ListDetaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBE22314D9E6004C19EB /* ListDetaiView.swift */; };
 		61F7DF0F23179DFF003E5723 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF0E23179DFF003E5723 /* QGrid */; };
 		61F7DF1223179FB2003E5723 /* SwiftWebUI in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF1123179FB2003E5723 /* SwiftWebUI */; };
+		61F7DF152317D919003E5723 /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF142317D919003E5723 /* SwiftUIFlux */; };
 		61FAA7F5230FE5F000E07760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FAA7F4230FE5F000E07760 /* AppDelegate.swift */; };
 		61FAA7F7230FE5F000E07760 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FAA7F6230FE5F000E07760 /* SceneDelegate.swift */; };
 		61FAA7F9230FE5F000E07760 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FAA7F8230FE5F000E07760 /* ContentView.swift */; };
@@ -55,6 +56,7 @@
 			files = (
 				61F7DF0F23179DFF003E5723 /* QGrid in Frameworks */,
 				616AEBDF2314D52D004C19EB /* Kingfisher in Frameworks */,
+				61F7DF152317D919003E5723 /* SwiftUIFlux in Frameworks */,
 				616AEBC52313ABE2004C19EB /* Alamofire in Frameworks */,
 				61F7DF1223179FB2003E5723 /* SwiftWebUI in Frameworks */,
 				616AEBE12314D52D004C19EB /* KingfisherSwiftUI in Frameworks */,
@@ -142,6 +144,7 @@
 				616AEBE02314D52D004C19EB /* KingfisherSwiftUI */,
 				61F7DF0E23179DFF003E5723 /* QGrid */,
 				61F7DF1123179FB2003E5723 /* SwiftWebUI */,
+				61F7DF142317D919003E5723 /* SwiftUIFlux */,
 			);
 			productName = SwiftUIBasic;
 			productReference = 61FAA7F1230FE5F000E07760 /* SwiftUIBasic.app */;
@@ -177,6 +180,7 @@
 				616AEBDD2314D52D004C19EB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				61F7DF0D23179DFE003E5723 /* XCRemoteSwiftPackageReference "QGrid" */,
 				61F7DF1023179FB2003E5723 /* XCRemoteSwiftPackageReference "SwiftWebUI" */,
+				61F7DF132317D919003E5723 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
 			);
 			productRefGroup = 61FAA7F2230FE5F000E07760 /* Products */;
 			projectDirPath = "";
@@ -451,6 +455,14 @@
 				kind = branch;
 			};
 		};
+		61F7DF132317D919003E5723 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dimillian/SwiftUIFlux.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -483,6 +495,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 61F7DF1023179FB2003E5723 /* XCRemoteSwiftPackageReference "SwiftWebUI" */;
 			productName = SwiftWebUI;
+		};
+		61F7DF142317D919003E5723 /* SwiftUIFlux */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61F7DF132317D919003E5723 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */;
+			productName = SwiftUIFlux;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

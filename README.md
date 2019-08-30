@@ -60,7 +60,8 @@ SwiftUI才刚刚开始,就像当年Swift刚刚起步一样,很多内部的事情
 
 也许那会我都转行了吧.
 
-这个Demo集成了Alamofire5.0,包含SwiftUI的Kingfisher,我只是用笨拙的方式,跟着视频亦步亦趋的写着涉及网络请求的UI界面.
+这个[Demo](https://github.com/seasonZhu/SwiftUIBasice](https://github.com/seasonZhu/SwiftUIBasice)
+)集成了Alamofire5.0,包含SwiftUI的Kingfisher,我只是用笨拙的方式,跟着视频亦步亦趋的写着涉及网络请求的UI界面.
 
 希望能给各位一点点帮助.
 
