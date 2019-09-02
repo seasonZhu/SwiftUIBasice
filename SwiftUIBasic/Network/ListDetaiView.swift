@@ -15,6 +15,7 @@ struct ListDetaiView: View {
     
     @State var isScale = false
     
+    /// Closure containing control flow statement cannot be used with function builder 'ViewBuilder'
     var body: some View {
         VStack(spacing: 10) {
             KFImage(URL(string: item.topicImageUrl!)!)
@@ -34,6 +35,23 @@ struct ListDetaiView: View {
             Text(item.topicDesc ?? "No Desc").font(.title).foregroundColor(.primary).lineLimit(10)
             
         }.navigationBarTitle(item.topicTittle ?? "Title")
+    }
+    
+    /// 如果在函数中做涉及返回的View类型的判断 而且判断之后返回的View的具体类型不相同 会直接报错
+    /// Function declares an opaque return type, but the return statements in its body do not have matching underlying types
+    private func getBody() -> some View {
+        if let urlString = item.topicImageUrl, let url = URL(string: urlString) {
+            print("网址有效")
+            return Text("\(url.absoluteURL)")
+        }else {
+            //print("网址无效)
+            return Text("Nothing")
+//            return Button(action: {
+//
+//            }) {
+//                Text("Press")
+//            }
+        }
     }
 }
 
