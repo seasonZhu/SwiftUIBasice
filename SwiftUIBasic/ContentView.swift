@@ -11,6 +11,8 @@ import MapKit
 
 /// 一个纯静态页面
 struct ContentView: View {
+    
+    @State var isSettingPresented = false
         
     var body: some View {
         
@@ -51,9 +53,25 @@ struct ContentView: View {
                 
             }
             .navigationBarTitle("景点", displayMode: .inline)
-            .navigationBarItems(trailing: NavigationLink(destination: ToastOrderView(), label: {
-                Text("to")
-            }))
+            .navigationBarItems(trailing:
+                Button(action:
+                    {
+                        self.isSettingPresented = true
+                        print("右上按钮被点击了")
+                        
+                }) {
+                HStack {
+                    Image(systemName: "wrench")
+                        .imageScale(.medium)
+                    
+                }
+                .frame(width: 30, height: 30)
+            })
+                .sheet(isPresented: $isSettingPresented, onDismiss: {
+                    print("Present出来的控制器即将消失")
+                }, content: {
+                    ToastOrderView()
+                })
         }.onAppear {
             print("视图即将展现")
         }.onDisappear {
