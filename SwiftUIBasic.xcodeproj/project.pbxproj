@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		613DA82A2321EC2100646916 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DA8292321EC2100646916 /* GridView.swift */; };
 		616AEBC223137216004C19EB /* ToastOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBC123137216004C19EB /* ToastOrderView.swift */; };
 		616AEBC52313ABE2004C19EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBC42313ABE2004C19EB /* Alamofire */; };
 		616AEBC82313AD32004C19EB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBC72313AD32004C19EB /* Model.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		613DA8292321EC2100646916 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		616AEBC123137216004C19EB /* ToastOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastOrderView.swift; sourceTree = "<group>"; };
 		616AEBC72313AD32004C19EB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		616AEBC92313AD90004C19EB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				61FAA7F6230FE5F000E07760 /* SceneDelegate.swift */,
 				61FAA7F8230FE5F000E07760 /* ContentView.swift */,
 				616AEBC123137216004C19EB /* ToastOrderView.swift */,
+				613DA8292321EC2100646916 /* GridView.swift */,
 				61FAA808230FE89E00E07760 /* MapView.swift */,
 				61FAA80A230FE8F800E07760 /* CircleImage.swift */,
 				61FAA7FA230FE5FA00E07760 /* Assets.xcassets */,
@@ -219,6 +222,7 @@
 				61FAA80B230FE8F800E07760 /* CircleImage.swift in Sources */,
 				616AEBCA2313AD90004C19EB /* ViewModel.swift in Sources */,
 				61FAA7F9230FE5F000E07760 /* ContentView.swift in Sources */,
+				613DA82A2321EC2100646916 /* GridView.swift in Sources */,
 				616AEBCE2313CB37004C19EB /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
