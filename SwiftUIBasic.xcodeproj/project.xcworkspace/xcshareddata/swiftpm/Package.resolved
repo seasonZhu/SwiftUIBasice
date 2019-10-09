@@ -47,6 +47,15 @@
         }
       },
       {
+        "package": "SeasonSwift",
+        "repositoryURL": "https://github.com/seasonZhu/SeasonSwift",
+        "state": {
+          "branch": "master",
+          "revision": "5065acc70a77309cd3aa82cfd874f3fd65941394",
+          "version": null
+        }
+      },
+      {
         "package": "SemanticUI",
         "repositoryURL": "https://github.com/SwiftWebResources/SemanticUI-Swift.git",
         "state": {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		613DA82A2321EC2100646916 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DA8292321EC2100646916 /* GridView.swift */; };
+		613DA82E2321FB5600646916 /* UserDetaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DA82D2321FB5600646916 /* UserDetaultWrapper.swift */; };
 		616AEBC223137216004C19EB /* ToastOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBC123137216004C19EB /* ToastOrderView.swift */; };
 		616AEBC52313ABE2004C19EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBC42313ABE2004C19EB /* Alamofire */; };
 		616AEBC82313AD32004C19EB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBC72313AD32004C19EB /* Model.swift */; };
@@ -18,6 +19,10 @@
 		616AEBDF2314D52D004C19EB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBDE2314D52D004C19EB /* Kingfisher */; };
 		616AEBE12314D52D004C19EB /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBE02314D52D004C19EB /* KingfisherSwiftUI */; };
 		616AEBE32314D9E6004C19EB /* ListDetaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBE22314D9E6004C19EB /* ListDetaiView.swift */; };
+		619C60B72326355200F34FBE /* ScrollableSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C60B62326355200F34FBE /* ScrollableSelector.swift */; };
+		619C60B923263E6D00F34FBE /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C60B823263E6D00F34FBE /* BorderedButton.swift */; };
+		619C60BB2326400E00F34FBE /* PopularityBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C60BA2326400E00F34FBE /* PopularityBadge.swift */; };
+		61C055F62328FE43002D920C /* SeasonSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61C055F52328FE43002D920C /* SeasonSwift */; };
 		61F7DF0F23179DFF003E5723 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF0E23179DFF003E5723 /* QGrid */; };
 		61F7DF1223179FB2003E5723 /* SwiftWebUI in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF1123179FB2003E5723 /* SwiftWebUI */; };
 		61F7DF152317D919003E5723 /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF142317D919003E5723 /* SwiftUIFlux */; };
@@ -33,12 +38,16 @@
 
 /* Begin PBXFileReference section */
 		613DA8292321EC2100646916 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		613DA82D2321FB5600646916 /* UserDetaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetaultWrapper.swift; sourceTree = "<group>"; };
 		616AEBC123137216004C19EB /* ToastOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastOrderView.swift; sourceTree = "<group>"; };
 		616AEBC72313AD32004C19EB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		616AEBC92313AD90004C19EB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		616AEBCD2313CB37004C19EB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		616AEBD22313D275004C19EB /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		616AEBE22314D9E6004C19EB /* ListDetaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetaiView.swift; sourceTree = "<group>"; };
+		619C60B62326355200F34FBE /* ScrollableSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableSelector.swift; sourceTree = "<group>"; };
+		619C60B823263E6D00F34FBE /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		619C60BA2326400E00F34FBE /* PopularityBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularityBadge.swift; sourceTree = "<group>"; };
 		61FAA7F1230FE5F000E07760 /* SwiftUIBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FAA7F4230FE5F000E07760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61FAA7F6230FE5F000E07760 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61F7DF0F23179DFF003E5723 /* QGrid in Frameworks */,
+				61C055F62328FE43002D920C /* SeasonSwift in Frameworks */,
 				616AEBDF2314D52D004C19EB /* Kingfisher in Frameworks */,
 				61F7DF152317D919003E5723 /* SwiftUIFlux in Frameworks */,
 				616AEBC52313ABE2004C19EB /* Alamofire in Frameworks */,
@@ -69,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		613DA82C2321FB2600646916 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				613DA82D2321FB5600646916 /* UserDetaultWrapper.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
 		616AEBC62313AD13004C19EB /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,11 +99,29 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		619C60B52326352A00F34FBE /* MovieSwiftShare */ = {
+			isa = PBXGroup;
+			children = (
+				619C60B62326355200F34FBE /* ScrollableSelector.swift */,
+				619C60B823263E6D00F34FBE /* BorderedButton.swift */,
+				619C60BA2326400E00F34FBE /* PopularityBadge.swift */,
+			);
+			path = MovieSwiftShare;
+			sourceTree = "<group>";
+		};
+		61C055EE2328CD26002D920C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		61FAA7E8230FE5F000E07760 = {
 			isa = PBXGroup;
 			children = (
 				61FAA7F3230FE5F000E07760 /* SwiftUIBasic */,
 				61FAA7F2230FE5F000E07760 /* Products */,
+				61C055EE2328CD26002D920C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +136,8 @@
 		61FAA7F3230FE5F000E07760 /* SwiftUIBasic */ = {
 			isa = PBXGroup;
 			children = (
+				619C60B52326352A00F34FBE /* MovieSwiftShare */,
+				613DA82C2321FB2600646916 /* PropertyWrapper */,
 				616AEBC62313AD13004C19EB /* Network */,
 				61FAA7F4230FE5F000E07760 /* AppDelegate.swift */,
 				61FAA7F6230FE5F000E07760 /* SceneDelegate.swift */,
@@ -148,6 +186,7 @@
 				61F7DF0E23179DFF003E5723 /* QGrid */,
 				61F7DF1123179FB2003E5723 /* SwiftWebUI */,
 				61F7DF142317D919003E5723 /* SwiftUIFlux */,
+				61C055F52328FE43002D920C /* SeasonSwift */,
 			);
 			productName = SwiftUIBasic;
 			productReference = 61FAA7F1230FE5F000E07760 /* SwiftUIBasic.app */;
@@ -184,6 +223,7 @@
 				61F7DF0D23179DFE003E5723 /* XCRemoteSwiftPackageReference "QGrid" */,
 				61F7DF1023179FB2003E5723 /* XCRemoteSwiftPackageReference "SwiftWebUI" */,
 				61F7DF132317D919003E5723 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
+				61C055F42328FE43002D920C /* XCRemoteSwiftPackageReference "SeasonSwift" */,
 			);
 			productRefGroup = 61FAA7F2230FE5F000E07760 /* Products */;
 			projectDirPath = "";
@@ -215,12 +255,16 @@
 				616AEBE32314D9E6004C19EB /* ListDetaiView.swift in Sources */,
 				616AEBC82313AD32004C19EB /* Model.swift in Sources */,
 				61FAA7F5230FE5F000E07760 /* AppDelegate.swift in Sources */,
+				619C60B72326355200F34FBE /* ScrollableSelector.swift in Sources */,
 				61FAA809230FE89E00E07760 /* MapView.swift in Sources */,
+				619C60B923263E6D00F34FBE /* BorderedButton.swift in Sources */,
 				616AEBD32313D275004C19EB /* ListCell.swift in Sources */,
 				61FAA7F7230FE5F000E07760 /* SceneDelegate.swift in Sources */,
 				616AEBC223137216004C19EB /* ToastOrderView.swift in Sources */,
+				613DA82E2321FB5600646916 /* UserDetaultWrapper.swift in Sources */,
 				61FAA80B230FE8F800E07760 /* CircleImage.swift in Sources */,
 				616AEBCA2313AD90004C19EB /* ViewModel.swift in Sources */,
+				619C60BB2326400E00F34FBE /* PopularityBadge.swift in Sources */,
 				61FAA7F9230FE5F000E07760 /* ContentView.swift in Sources */,
 				613DA82A2321EC2100646916 /* GridView.swift in Sources */,
 				616AEBCE2313CB37004C19EB /* ListView.swift in Sources */,
@@ -443,6 +487,14 @@
 				revision = 58d878f85ad223a469ce1474e1c73e29a4012577;
 			};
 		};
+		61C055F42328FE43002D920C /* XCRemoteSwiftPackageReference "SeasonSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/seasonZhu/SeasonSwift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		61F7DF0D23179DFE003E5723 /* XCRemoteSwiftPackageReference "QGrid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Q-Mobile/QGrid";
@@ -489,6 +541,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 616AEBDD2314D52D004C19EB /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
+		};
+		61C055F52328FE43002D920C /* SeasonSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61C055F42328FE43002D920C /* XCRemoteSwiftPackageReference "SeasonSwift" */;
+			productName = SeasonSwift;
 		};
 		61F7DF0E23179DFF003E5723 /* QGrid */ = {
 			isa = XCSwiftPackageProductDependency;
