@@ -46,6 +46,10 @@ struct ContentView: View {
                     NavigationLink(destination: ListView()) {
                         Text("To ListView")
                     }
+                    
+                    NavigationLink(destination: SFSymbolsView()) {
+                        Text("To SFSymbolsView")
+                    }
                 }
                 .padding()
 
