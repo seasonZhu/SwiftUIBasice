@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6130E7DC2390C735009CD90A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6130E7DB2390C735009CD90A /* Kingfisher */; };
+		6130E7DE2390C735009CD90A /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6130E7DD2390C735009CD90A /* KingfisherSwiftUI */; };
+		6130E7E12390C7E4009CD90A /* SeasonSwiftExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 6130E7E02390C7E4009CD90A /* SeasonSwiftExtension */; };
 		613DA82A2321EC2100646916 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DA8292321EC2100646916 /* GridView.swift */; };
 		613DA82E2321FB5600646916 /* UserDetaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DA82D2321FB5600646916 /* UserDetaultWrapper.swift */; };
 		616AEBC223137216004C19EB /* ToastOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBC123137216004C19EB /* ToastOrderView.swift */; };
@@ -16,13 +19,11 @@
 		616AEBCE2313CB37004C19EB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBCD2313CB37004C19EB /* ListView.swift */; };
 		616AEBD12313CD31004C19EB /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBD02313CD31004C19EB /* SwiftUIX */; };
 		616AEBD32313D275004C19EB /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBD22313D275004C19EB /* ListCell.swift */; };
-		616AEBDF2314D52D004C19EB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBDE2314D52D004C19EB /* Kingfisher */; };
-		616AEBE12314D52D004C19EB /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 616AEBE02314D52D004C19EB /* KingfisherSwiftUI */; };
 		616AEBE32314D9E6004C19EB /* ListDetaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616AEBE22314D9E6004C19EB /* ListDetaiView.swift */; };
 		619C60B72326355200F34FBE /* ScrollableSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C60B62326355200F34FBE /* ScrollableSelector.swift */; };
 		619C60B923263E6D00F34FBE /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C60B823263E6D00F34FBE /* BorderedButton.swift */; };
 		619C60BB2326400E00F34FBE /* PopularityBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619C60BA2326400E00F34FBE /* PopularityBadge.swift */; };
-		61C055F62328FE43002D920C /* SeasonSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61C055F52328FE43002D920C /* SeasonSwift */; };
+		61DD91B72382A374004434C9 /* SeasonSwiftTool in Frameworks */ = {isa = PBXBuildFile; productRef = 61DD91B62382A374004434C9 /* SeasonSwiftTool */; };
 		61F7DF0F23179DFF003E5723 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF0E23179DFF003E5723 /* QGrid */; };
 		61F7DF1223179FB2003E5723 /* SwiftWebUI in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF1123179FB2003E5723 /* SwiftWebUI */; };
 		61F7DF152317D919003E5723 /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 61F7DF142317D919003E5723 /* SwiftUIFlux */; };
@@ -66,12 +67,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				61F7DF0F23179DFF003E5723 /* QGrid in Frameworks */,
-				61C055F62328FE43002D920C /* SeasonSwift in Frameworks */,
-				616AEBDF2314D52D004C19EB /* Kingfisher in Frameworks */,
+				6130E7E12390C7E4009CD90A /* SeasonSwiftExtension in Frameworks */,
 				61F7DF152317D919003E5723 /* SwiftUIFlux in Frameworks */,
+				6130E7DC2390C735009CD90A /* Kingfisher in Frameworks */,
+				61DD91B72382A374004434C9 /* SeasonSwiftTool in Frameworks */,
 				616AEBC52313ABE2004C19EB /* Alamofire in Frameworks */,
 				61F7DF1223179FB2003E5723 /* SwiftWebUI in Frameworks */,
-				616AEBE12314D52D004C19EB /* KingfisherSwiftUI in Frameworks */,
+				6130E7DE2390C735009CD90A /* KingfisherSwiftUI in Frameworks */,
 				616AEBD12313CD31004C19EB /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,12 +183,13 @@
 			packageProductDependencies = (
 				616AEBC42313ABE2004C19EB /* Alamofire */,
 				616AEBD02313CD31004C19EB /* SwiftUIX */,
-				616AEBDE2314D52D004C19EB /* Kingfisher */,
-				616AEBE02314D52D004C19EB /* KingfisherSwiftUI */,
 				61F7DF0E23179DFF003E5723 /* QGrid */,
 				61F7DF1123179FB2003E5723 /* SwiftWebUI */,
 				61F7DF142317D919003E5723 /* SwiftUIFlux */,
-				61C055F52328FE43002D920C /* SeasonSwift */,
+				61DD91B62382A374004434C9 /* SeasonSwiftTool */,
+				6130E7DB2390C735009CD90A /* Kingfisher */,
+				6130E7DD2390C735009CD90A /* KingfisherSwiftUI */,
+				6130E7E02390C7E4009CD90A /* SeasonSwiftExtension */,
 			);
 			productName = SwiftUIBasic;
 			productReference = 61FAA7F1230FE5F000E07760 /* SwiftUIBasic.app */;
@@ -219,11 +222,12 @@
 			packageReferences = (
 				616AEBC32313ABE2004C19EB /* XCRemoteSwiftPackageReference "Alamofire" */,
 				616AEBCF2313CD31004C19EB /* XCRemoteSwiftPackageReference "SwiftUIX" */,
-				616AEBDD2314D52D004C19EB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				61F7DF0D23179DFE003E5723 /* XCRemoteSwiftPackageReference "QGrid" */,
 				61F7DF1023179FB2003E5723 /* XCRemoteSwiftPackageReference "SwiftWebUI" */,
 				61F7DF132317D919003E5723 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
-				61C055F42328FE43002D920C /* XCRemoteSwiftPackageReference "SeasonSwift" */,
+				61DD91B52382A374004434C9 /* XCRemoteSwiftPackageReference "SeasonSwiftTool" */,
+				6130E7DA2390C735009CD90A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6130E7DF2390C7E4009CD90A /* XCRemoteSwiftPackageReference "SeasonSwiftExtension" */,
 			);
 			productRefGroup = 61FAA7F2230FE5F000E07760 /* Products */;
 			projectDirPath = "";
@@ -463,6 +467,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6130E7DA2390C735009CD90A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6130E7DF2390C7E4009CD90A /* XCRemoteSwiftPackageReference "SeasonSwiftExtension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/seasonZhu/SeasonSwiftExtension.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
 		616AEBC32313ABE2004C19EB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -479,17 +499,9 @@
 				kind = branch;
 			};
 		};
-		616AEBDD2314D52D004C19EB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		61DD91B52382A374004434C9 /* XCRemoteSwiftPackageReference "SeasonSwiftTool" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = revision;
-				revision = 58d878f85ad223a469ce1474e1c73e29a4012577;
-			};
-		};
-		61C055F42328FE43002D920C /* XCRemoteSwiftPackageReference "SeasonSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/seasonZhu/SeasonSwift";
+			repositoryURL = "https://github.com/seasonZhu/SeasonSwiftTool";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -522,6 +534,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6130E7DB2390C735009CD90A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6130E7DA2390C735009CD90A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6130E7DD2390C735009CD90A /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6130E7DA2390C735009CD90A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		6130E7E02390C7E4009CD90A /* SeasonSwiftExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6130E7DF2390C7E4009CD90A /* XCRemoteSwiftPackageReference "SeasonSwiftExtension" */;
+			productName = SeasonSwiftExtension;
+		};
 		616AEBC42313ABE2004C19EB /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 616AEBC32313ABE2004C19EB /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -532,20 +559,10 @@
 			package = 616AEBCF2313CD31004C19EB /* XCRemoteSwiftPackageReference "SwiftUIX" */;
 			productName = SwiftUIX;
 		};
-		616AEBDE2314D52D004C19EB /* Kingfisher */ = {
+		61DD91B62382A374004434C9 /* SeasonSwiftTool */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 616AEBDD2314D52D004C19EB /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		616AEBE02314D52D004C19EB /* KingfisherSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 616AEBDD2314D52D004C19EB /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = KingfisherSwiftUI;
-		};
-		61C055F52328FE43002D920C /* SeasonSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 61C055F42328FE43002D920C /* XCRemoteSwiftPackageReference "SeasonSwift" */;
-			productName = SeasonSwift;
+			package = 61DD91B52382A374004434C9 /* XCRemoteSwiftPackageReference "SeasonSwiftTool" */;
+			productName = SeasonSwiftTool;
 		};
 		61F7DF0E23179DFF003E5723 /* QGrid */ = {
 			isa = XCSwiftPackageProductDependency;

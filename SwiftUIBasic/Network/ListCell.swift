@@ -8,10 +8,14 @@
 
 import SwiftUI
 import KingfisherSwiftUI
+import SeasonSwiftExtension
+import Alamofire
 
 struct ListCell: View {
     
     let item: ListItem
+    
+    @State var image: UIImage?
     
     /// Function declares an opaque return type, but the return statements in its body do not have matching underlying types
     /// 尴尬的是在boyd这个属性中,无法使用guard let 这样的函数去守护item中的可选类型
@@ -26,10 +30,17 @@ struct ListCell: View {
         //let urlString = item.topicImageUrl
         //let url = URL(string: urlString!)
         HStack {
-            KFImage(URL(string: item.topicImageUrl!)!)
-                .placeholder {
-                    Image("turtlerock")
-                }
+            
+        /// Kingfisher 目前真的是有问题, 另外图片的url已经失效了,临时写死了
+//            KFImage(URL(string: "http://112.74.43.107/Public/banner/1.png")!)
+//                .placeholder {
+//                    Image("turtlerock")
+//                }
+//                .resizable()
+//                .frame(width: 44, height: 44, alignment: .center)
+//                .cornerRadius(8)
+            
+            Image(uiImage: image ?? UIImage(named: "turtlerock")!)
                 .resizable()
                 .frame(width: 44, height: 44, alignment: .center)
                 .cornerRadius(8)
@@ -42,8 +53,17 @@ struct ListCell: View {
 //                        .lineLimit(2)
                 }
             }
+        }.onAppear {
+            self.networkRequest()
         }
     }
+    
+    func networkRequest() {
+        ViewModel.getItemUIImage(imageUrl: "http://112.74.43.107/Public/banner/1.png") { (image, _) in
+            self.image = image
+        }
+    }
+    
 }
 
 //struct ListCell_Previews: PreviewProvider {

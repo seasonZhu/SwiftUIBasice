@@ -23,8 +23,8 @@
         "package": "Kingfisher",
         "repositoryURL": "https://github.com/onevcat/Kingfisher",
         "state": {
-          "branch": null,
-          "revision": "58d878f85ad223a469ce1474e1c73e29a4012577",
+          "branch": "master",
+          "revision": "7784d52486d55d3c783583222e364010742f46d3",
           "version": null
         }
       },
@@ -42,16 +42,25 @@
         "repositoryURL": "https://github.com/wickwirew/Runtime.git",
         "state": {
           "branch": null,
-          "revision": "c167476b07fe8cc65fdf064076a4081c3269d14a",
-          "version": "2.1.0"
+          "revision": "61c9776f47d2951bdc562486ad348e5e1ca2e180",
+          "version": "2.1.1"
         }
       },
       {
-        "package": "SeasonSwift",
-        "repositoryURL": "https://github.com/seasonZhu/SeasonSwift",
+        "package": "SeasonSwiftExtension",
+        "repositoryURL": "https://github.com/seasonZhu/SeasonSwiftExtension.git",
+        "state": {
+          "branch": null,
+          "revision": "e78344e5cf5d9b7785765ef9fd2990d7a4e88d91",
+          "version": "0.0.6"
+        }
+      },
+      {
+        "package": "SeasonSwiftTool",
+        "repositoryURL": "https://github.com/seasonZhu/SeasonSwiftTool",
         "state": {
           "branch": "master",
-          "revision": "5065acc70a77309cd3aa82cfd874f3fd65941394",
+          "revision": "e8a35051358b801f4b2e96cfa0f0e1201f12aa2f",
           "version": null
         }
       },
@@ -69,8 +78,8 @@
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
           "branch": null,
-          "revision": "32760eae40e6b7cb81d4d543bb0a9f548356d9a2",
-          "version": "2.7.1"
+          "revision": "ff01888051cd7efceb1bf8319c1dd3986c4bf6fc",
+          "version": "2.10.1"
         }
       },
       {
