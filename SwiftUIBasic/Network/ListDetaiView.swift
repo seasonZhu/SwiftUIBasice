@@ -18,14 +18,27 @@ struct ListDetaiView: View {
     /// Closure containing control flow statement cannot be used with function builder 'ViewBuilder'
     var body: some View {
         VStack(spacing: 10) {
-            KFImage(URL(string: item.topicImageUrl!)!)
-                .placeholder {
-                    Image("turtlerock")
-                }
-                .resizable(capInsets: EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10), resizingMode: .stretch)
+//            KFImage(URL(string: item.topicImageUrl!)!)
+//                .placeholder {
+//                    Image("turtlerock")
+//                }
+//                .resizable(capInsets: EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10), resizingMode: .stretch)
+//                .frame(width: 300, height: 300, alignment: .center)
+//            .cornerRadius(10)
+//            .onTapGesture {
+//                print("图片的点击事件,想放大图片")
+//                self.isScale = !self.isScale
+//            }
+//            
+//            RemoteImageView(string: "")!.placeholder { () -> Image in
+//                return Image("turtlerock")
+//            }
+            
+            RemoteImageView(string: "http://112.74.43.107/Public/banner/1.png")!.placeholder {
+                Image("turtlerock")
+            }
                 .frame(width: 300, height: 300, alignment: .center)
-            .cornerRadius(10)
-            .onTapGesture {
+                .cornerRadius(10).onTapGesture {
                 print("图片的点击事件,想放大图片")
                 self.isScale = !self.isScale
             }
