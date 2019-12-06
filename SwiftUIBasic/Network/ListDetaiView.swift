@@ -29,14 +29,12 @@ struct ListDetaiView: View {
 //                print("图片的点击事件,想放大图片")
 //                self.isScale = !self.isScale
 //            }
-//            
+//
 //            RemoteImageView(string: "")!.placeholder { () -> Image in
 //                return Image("turtlerock")
 //            }
             
-            RemoteImageView(string: "http://112.74.43.107/Public/banner/1.png")!.placeholder {
-                Image("turtlerock")
-            }
+            RemoteImageView(string: "http://112.74.43.107/Public/banner/1.png", placeholder: Image("turtlerock"))
                 .frame(width: 300, height: 300, alignment: .center)
                 .cornerRadius(10).onTapGesture {
                 print("图片的点击事件,想放大图片")
