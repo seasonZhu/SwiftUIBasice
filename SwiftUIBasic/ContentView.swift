@@ -39,17 +39,10 @@ struct ContentView: View {
                             .font(.subheadline)
                     }
                     
-                    NavigationLink(destination: ToastOrderView()) {
-                        Text("Next Controller")
+                    NavigationLink(destination: FunctionListView()) {
+                        Text("FunctionListView")
                     }
                     
-                    NavigationLink(destination: ListView()) {
-                        Text("To ListView")
-                    }
-                    
-                    NavigationLink(destination: SFSymbolsView()) {
-                        Text("To SFSymbolsView")
-                    }
                 }
                 .padding()
 

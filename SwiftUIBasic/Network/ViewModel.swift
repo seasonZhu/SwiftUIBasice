@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-import SeasonSwiftExtensions
+import SeasonSwiftExtension
 
 struct ViewModel {
     static func getListModelInfo(callback: @escaping ([ListItem]?, AFError?) -> Void) {
