@@ -11,11 +11,10 @@ import SwiftUI
 struct NewsListView: View {
     
     @State var list: [News]?
-    
-    @State var isDisable = true
-    
+        
     @State var isNetWorkSuccess = false
     
+    /// 模拟器中看SwiftUI还是有很多bug的
     var body: some View {
         ZStack {
             if isNetWorkSuccess {
@@ -29,7 +28,9 @@ struct NewsListView: View {
             }else {
                 VStack {
                     Text("正在加载")
-                    IndicatorView()
+                    ActivityIndicatorView()
+                        .frame(width: 40, height: 40)
+                        .previewLayout(.sizeThatFits)
                 }
             }
         }
@@ -45,9 +46,9 @@ struct NewsListView: View {
     /// 网络请求
     func netWorkRequest() {
         NewsRequest.getNews { (news, error) in
-            self.isNetWorkSuccess = news != nil
-            self.list = news
-            print(news)
+            isNetWorkSuccess = news != nil
+            list = news
+            //print(news)
         }
     }
 }
@@ -58,12 +59,7 @@ struct NewsListView_Previews: PreviewProvider {
     }
 }
 
-struct NewsListCell_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsListCell(news: News(authorAvatar: "http://112.74.43.107/Public/banner/1.png", authorEmail: nil, authorName: nil, columnId: nil, columnName: nil, commentsCount: nil, content: "内容", cover: nil, createdAt: "2020-10-28", fromId: nil, id: 1233, postId: nil, publishedAt: nil, storeAt: nil, summary: nil, title: "测试", type: nil, updatedAt: nil, viewsCount: 0))
-    }
-}
-
+/// 桥接的效果并不是很好 找了一个轮子ActivityIndicatorView
 struct IndicatorView: UIViewRepresentable {
     func makeUIView(context: Context) -> UIActivityIndicatorView {
         UIActivityIndicatorView(style: .large)

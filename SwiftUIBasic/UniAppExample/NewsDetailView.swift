@@ -7,16 +7,19 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct NewsDetailView: View {
     let news: News
     
     var body: some View {
-        //let html = (news.content ?? "没有内容").htmlToString
-        ScrollView {
-            Text(news.content ?? "没有内容")
-        }.navigationBarTitle(news.title ?? "没有标题")
-        
+        webView().padding([.leading, .trailing], 5)
+    }
+    
+    func webView() -> some View {
+        let wkWebView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
+        wkWebView.loadHTMLString(news.content ?? "", baseURL: nil)
+        return WebView(webView: wkWebView).navigationBarTitle(news.title ?? "没有标题")
     }
 }
 

@@ -13,7 +13,7 @@ struct NewsListCell: View {
     let news: News
     
     var body: some View {
-//        NavigationLink(destination: NewsDetailView(news: news)) {
+        NavigationLink(destination: NewsDetailView(news: news)) {
             HStack {
                 KFImage(URL(string: news.authorAvatar ?? "http://112.74.43.107/Public/banner/1.png"))
                     .resizable()
@@ -32,6 +32,12 @@ struct NewsListCell: View {
                     }
                 }).padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
             }
-//        }
+        }
+    }
+}
+
+struct NewsListCell_Previews: PreviewProvider {
+    static var previews: some View {
+        NewsListCell(news: News(authorAvatar: "http://112.74.43.107/Public/banner/1.png", authorEmail: nil, authorName: nil, columnId: nil, columnName: nil, commentsCount: nil, content: "内容", cover: nil, createdAt: "2020-10-28", fromId: nil, id: 1233, postId: nil, publishedAt: nil, storeAt: nil, summary: nil, title: "测试", type: nil, updatedAt: nil, viewsCount: 0))
     }
 }
