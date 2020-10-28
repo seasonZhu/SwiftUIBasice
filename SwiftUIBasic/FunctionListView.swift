@@ -35,6 +35,10 @@ struct FunctionListView: View {
                 Text("To ControlView")
             }
             
+            NavigationLink(destination: NewsListView()) {
+                Text("To UniAppExample")
+            }
+            
             Section(header: Text("Good Heros"), footer: Text("This is footer Powerful").foregroundColor(.yellow)){
                 Text("Thanos")
                 Text("Thanos")
@@ -78,9 +82,9 @@ struct FunctionListView: View {
             }
             .frame(width: 30, height: 30)
         })
-            .alert(isPresented: $isAlert) {
-                
-            }
+        .alert(isPresented: $isAlert, content: {
+            Alert(title: Text("some"))
+        })
         
         
     }
